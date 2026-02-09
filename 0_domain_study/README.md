@@ -42,7 +42,7 @@ to assess nanoparticle localization and accumulation within biological
 tissues.
 
 1. Esophageal disorders in mixed connective tissue diseases.
-   Nica AE*, Alexa LM***, Ionescu AO**, Andronic O**, Păduraru DN.
+   Nica AE, Alexa LM, Ionescu AO, Andronic O, Păduraru DN.
    Journal of Medicine and Life, Vol. 9, Issue 2, April–June 2016,
    pp. 141–143.
 

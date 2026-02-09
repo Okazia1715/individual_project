@@ -14,6 +14,7 @@ cell segmentation with Cellpose. Raw images are not modified;
 processed images are saved into a separate output directory.
 """
 
+
 def apply_contrast_uint8(img_u8: np.ndarray, factor: float) -> np.ndarray:
     """
     Contrast around mid-gray 128 for uint8 images:
@@ -25,7 +26,9 @@ def apply_contrast_uint8(img_u8: np.ndarray, factor: float) -> np.ndarray:
     return y
 
 
-def process_image(path: Path, out_path: Path, contrast_factor: float, invert: bool) -> None:
+def process_image(
+    path: Path, out_path: Path, contrast_factor: float, invert: bool
+) -> None:
     im = Image.open(path)
 
     # Convert to RGB to have consistent behavior
@@ -50,12 +53,31 @@ def process_image(path: Path, out_path: Path, contrast_factor: float, invert: bo
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--in_dir", required=True, type=str, help="Input folder with images")
-    ap.add_argument("--out_dir", required=True, type=str, help="Output folder to save processed images")
-    ap.add_argument("--contrast", default=1.2, type=float, help="Contrast factor (e.g. 1.2 means +20%)")
+    ap.add_argument(
+        "--in_dir", required=True, type=str, help="Input folder with images"
+    )
+    ap.add_argument(
+        "--out_dir",
+        required=True,
+        type=str,
+        help="Output folder to save processed images",
+    )
+    ap.add_argument(
+        "--contrast",
+        default=1.2,
+        type=float,
+        help="Contrast factor (e.g. 1.2 means +20%)",
+    )
     ap.add_argument("--invert", action="store_true", help="Invert image intensities")
-    ap.add_argument("--exts", default=".png,.jpg,.jpeg,.tif,.tiff", type=str, help="Comma-separated extensions")
-    ap.add_argument("--overwrite", action="store_true", help="Overwrite output if exists")
+    ap.add_argument(
+        "--exts",
+        default=".png,.jpg,.jpeg,.tif,.tiff",
+        type=str,
+        help="Comma-separated extensions",
+    )
+    ap.add_argument(
+        "--overwrite", action="store_true", help="Overwrite output if exists"
+    )
     args = ap.parse_args()
 
     in_dir = Path(args.in_dir)

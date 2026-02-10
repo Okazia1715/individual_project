@@ -121,7 +121,7 @@ def main():
     print(f"[INFO] Input folder : {IN_DIR.resolve()}")
     print(f"[INFO] Output folder: {OUT_DIR.resolve()}")
     print(f"[INFO] Contrast factor: {CONTRAST_FACTOR}")
-    print(f"[INFO] Invert: True")
+    print("[INFO] Invert: True")
     print(f"[INFO] Processed: {n_done}")
     print(f"[INFO] Unreadable/skipped: {n_bad}")
 

@@ -43,21 +43,28 @@ data augmentation techniques.
 Although the original dataset contains five tissue classes,
 **this project uses only a single subset**:
 
-> **Colon benign tissue (class #5)**
+> **Colon benign tissue**
 
 Only images belonging to this class are included in the
 analysis and modeling pipeline.
 All other tissue classes are excluded from this project.
 
+---
+
+### GitHub Repository Display Limitations
+
 Due to GitHub repository size limitations,
 **only the folder used in this project
-(`colon_benign_tissue`) is included in the repository**.
+(`Colon_Benign_Tissue`) is included in the repository**.
+When viewed through the GitHub web interface,
+the number of images displayed in this folder
+may appear smaller than the actual number of images stored.
+
+When the repository is cloned or downloaded locally,
+**all images included in the `Colon_Benign_Tissue` folder
+are present in full**.
 The complete original dataset archive can be downloaded
 directly from Kaggle using the link provided above.
-
-The dataset is used for computer vision and
-machine learning experiments focused on
-histopathological image analysis.
 
 ---
 

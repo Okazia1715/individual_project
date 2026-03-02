@@ -38,4 +38,3 @@ gastrointestinal tissue. In other words, the question that was asked
 was: how can nanoparticle localization in cells be measured
 efficiently, ensuring reproducibility, transparency, and biological
 accuracy?
-

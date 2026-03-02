@@ -32,4 +32,4 @@ gastrointestinal tissue cells?
 - Limited availability of annotated image masks
 - Lack of a ground-truth nanoparticle image set
 - Project time constraints
-- Requirement to ensure reproducibility 
+- Requirement to ensure reproducibility
